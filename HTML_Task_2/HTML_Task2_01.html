@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Here</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form>
+            <div class="header">
+                <h1>Form Here</h1>
+                <p>* required fields</p>
+            </div>
+            <div class="main">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" name="username" id="name" placeholder="placeholder text">
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="placeholder text" required>
+                    <div class="prompt">
+                        <div class="arrow-left"></div>
+                        <div class="help">Form field hint</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="website">Website:</label>
+                    <input type="url" name="website" id="website" placeholder="placeholder text" required>
+                    <div class="prompt">
+                        <div class="arrow-left"></div>
+                        <div class="help">Form field hint</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>   
+            </div>
+            <div style="clear:both"></div>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>
