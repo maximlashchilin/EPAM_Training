@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.flex-container__wrapper {
+    flex-basis: 25%;
+    background-color: rgb(245, 245, 245);
+}
+.pages {
+    height: 2rem;
+    background-color: rgb(231, 231, 231);
+}
+.aside__title {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 2rem 0 0 1rem;
+    margin-bottom: .5rem;
+}
+.aside__label {
+    margin: .5rem 0 2rem 1rem;
+}
+.menu-aside {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0 0 1rem;
+}
+.menu-aside__elem {
+    padding: .5rem 0 .5rem 0;
+}
+.menu-aside__elem a {
+    color: rgb(115, 115, 115);
+}
+.menu-aside__elem a:visited {
+    color: rgb(115, 115, 115);
+}
+.flex-container__content {
+    flex-basis: 75%;
+}
+.flex-container__footer {
+    flex-basis: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+}
+.record {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 3rem 0;
+}
+.header {
+    width: 100%;
+}
+.header__date {
+    margin: 0 0 0 5rem;
+    color: rgb(217, 217, 217);
+    text-transform: uppercase;
+}
+.header__title {
+    margin: 1.5rem 0 2.5rem 5rem;
+    font-size: 4rem;
+}
+.navigation {
+    width: 30%;
+}
+.menu {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 0 0 5rem;
+}
+.content-section {
+    width: 70%;
+}
+.menu__elem:first-child {
+    border-top: 2px solid rgb(244, 244, 244);
+}
+.menu__elem {
+    border-bottom: 2px solid rgb(244, 244, 244);
+    padding: 1rem 0 1rem 0;
+    width: 85%;
+    text-transform: uppercase;
+}
+.menu__elem a {
+    color: rgb(217, 217, 217);
+}
+.menu__elem a:visited {
+    color: rgb(217, 217, 217);
+}
+.fas, .far {
+    padding-right: .5rem;
+}
+.line {
+    width: 85%;
+    background-color: rgb(245, 245, 245);
+    height: 1rem;
+    border: 0;
+    margin-top: 3rem;
+}
+.content-section__label {
+    margin: 0 0 3rem 12rem;
+    text-transform: uppercase;
+    color: rgb(217, 217, 217);
+}
+.content-section__paragraph {
+    margin-top: 0;
+}
