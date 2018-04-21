@@ -1,0 +1,39 @@
+.field {
+    margin: 1rem;
+    position: relative; 
+    font-weight: bold; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label { 
+    position: absolute; 
+    transition: all .2s linear; 
+    color:#489efe; 
+    font-size: 1rem;
+    margin-left: -15rem;
+}
+input {
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 1.4rem;
+    padding: 3px 2px; 
+}
+input:invalid + label {
+    top: 3px; 
+    opacity: 0;
+}
+input:valid + label {
+    top: -.4rem;
+    color: gray;
+}
+input:focus + label {
+    opacity: 1; 
+    top: -.4rem;
+    color: #489efe;
+}
+input:focus {
+    outline: none;
+}
+input:focus::placeholder {
+    color: transparent;
+}

@@ -1,0 +1,45 @@
+.animation {
+    margin-left: 300px;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    animation-name: myAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+@keyframes myAnim {
+    0% {
+        border-radius: 50%;
+        background: radial-gradient(red, green);
+    }
+    14.3% {
+        border-radius: 0;
+        background: radial-gradient(red, green);
+    }
+    28.6% {
+        background: radial-gradient(green, blue);
+        width: 300px;
+        height: 300px;
+        transform: skewX(0deg);
+    }
+    42.9% {
+        width: 500px;
+        height: 500px;
+        transform: skewX(50deg);
+    }
+    57.2% {
+        transform: rotate(0deg);
+    }
+    71.5% {
+        transform: rotate(360deg);
+        background: radial-gradient(green, blue);
+    }
+    85.8% {
+        background: radial-gradient(blue, red);
+        border-radius: 0;
+    }
+    100% {
+        border-radius: 50%;
+        background: radial-gradient(red, green);
+    }
+}
