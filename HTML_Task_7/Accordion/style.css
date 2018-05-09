@@ -1,0 +1,24 @@
+#accordion {
+    margin: 0 auto;
+    width: 60%;
+}
+.accordion__section {
+    padding: 0;
+
+}
+.accordion__label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background: #56ff;
+}
+.accordion__content {
+    display: none;
+    background: #56ff;
+}
+.accordion__content p {
+    margin: 0;
+}

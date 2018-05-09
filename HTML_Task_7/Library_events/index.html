@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Books</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/popUpstyle.css">
+    </head>
+    <body class="flex-container">
+        <!--flex-container__header-->
+        <header class="flex-container__header">
+            <ul class="header-list">
+                <li class="header-list__elem"><a href="#">Help Center</a></li>
+                <li class="header-list__elem"><a href="#">Our Support</a></li>
+                <li class="header-list__elem">
+                    <button class="private-office">
+                        <img class="private-office__avatar" src="images/avatar.jpg">
+                        <span class="private-office__username">John Doe</span>
+                        <i class="private-office__arrow fas fa-chevron-circle-down"></i>
+                    </button>
+                </li>
+            </ul>
+        </header>
+        <!--flex-container__aside-->
+        <aside class="flex-container__aside">
+            <article class="wrapper-of-button">
+                <button class="wrapper-of-button__button" href="#"><i class="wrapper-of-button__icon fas fa-plus"></i>Add a book</button>
+            </article>
+            <nav class="menu">
+                <ul class="menu__box">
+                    <li class="menu__elem">
+                        <a class="menu__elem_unmarked" href="#"><i class="fas fa-book menu__icon"></i>Now Reading</a>
+                    </li>
+                    <li class="menu__elem">
+                        <a class="menu__elem_unmarked" href="#"><i class="fas fa-globe menu__icon"></i>Browse</a>
+                    </li>
+                    <li class="menu__elem">
+                        <a class="menu__elem_unmarked" href="#"><i class="fas fa-shopping-cart menu__icon"></i>Buy Books</a>
+                    </li>
+                    <li class="menu__elem">
+                        <a class="menu__elem_unmarked" href="#"><i class="fas fa-star menu__icon"></i>Favourite Books</a>
+                    </li>
+                    <li class="menu__elem">
+                        <a class="menu__elem_unmarked" href="#"><i class="fas fa-list menu__icon"></i>Wishlist</a>
+                    </li>
+                    <li class="menu__elem">
+                        <a class="menu__elem_unmarked" href="#"><i class="far fa-clock menu__icon"></i>History</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="categories-wrapper">
+                <ul class="categories">
+                    <li class="categories__elem">
+                        <a href="#" class="categories__elem_unmarked">Must Read Titles</a>
+                    </li>
+                    <li class="categories__elem">
+                        <a href="#" class="categories__elem_unmarked">Best Of List</a>
+                    </li>
+                    <li class="categories__elem">
+                        <a href="#" class="categories__elem_unmarked">Classic Novels</a>
+                    </li>
+                    <li class="categories__elem">
+                        <a href="#" class="categories__elem_unmarked">Non Fiction</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="action-log-wrapper">
+                <ul class="action-log">
+                    <li class="action-log__event">
+                        <i class="far fa-clock action-log__event_icon"></i>
+                        <p class="action-log__p">You added 
+                            <strong class="action-log__event_strong">Fight club</strong> by
+                            <strong class="action-log__event_strong">Chuck Palahniuk</strong> to your
+                            <strong class="action-log__event_strong">Must Read Titles</strong>
+                        </p>
+                        <p class="action-log__time">24 minutes ago</p>
+                    </li>
+                    <li class="action-log__event">
+                        <i class="far fa-clock action-log__event_icon"></i>
+                        <p class="action-log__p">You added
+                            <strong class="action-log__event_strong">The Trial</strong> by
+                            <strong class="action-log__event_strong">Franz Kafka</strong> to your
+                            <strong class="action-log__event_strong">Must Read Titles</strong>
+                        </p>
+                        <p class="action-log__time">48 minutes ago</p>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--flex-container__main-->
+        <section class="flex-container__main">
+            <header class="header">
+                <h1>Browse Available Books</h1>
+            </header>
+            <article class="filter">
+                <ul class="filter-list">
+                    <li class="filter-list__elem"><button class="filter-list__elem_hover">All Books</button></li>
+                    <li class="filter-list__elem"><button class="filter-list__elem_hover">Most Recent</button></li>
+                    <li class="filter-list__elem"><button class="filter-list__elem_hover">Most Popular</button></li>
+                    <li class="filter-list__elem"><button class="filter-list__elem_hover">Free Books</button></li>
+                </ul>
+                <form name="search" action="" class="search">
+                    <input type="text" class="search__line" pattern=".+" required placeholder="Enter Keywords">
+                    <button id="search-button" class="search__submit"><i class="fas fa-search"></i></button>
+                </form>
+            </article>
+            <section class="content"></section>
+        </section>
+        <!--flex-container__footer-->
+        <footer class="flex-container__footer">
+            <button class="flex-container__elem"><i class="flex-container_icon fas fa-question-circle"></i></button>
+            <button class="flex-container__elem"><i class="flex-container_icon fas fa-cog"></i></button>
+        </footer>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

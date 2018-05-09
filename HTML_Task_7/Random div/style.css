@@ -1,0 +1,7 @@
+#button {
+    margin-left: calc(50% - 10px);
+}
+div {
+    position: absolute;
+    z-index: 1;
+}
