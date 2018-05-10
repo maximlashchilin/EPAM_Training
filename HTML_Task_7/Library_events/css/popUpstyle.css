@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "Proxima Nova Rg"; 
+}
+.popUp-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;  
+}
+.popUp {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.popUp__title {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.popUp__button-close {
+    display: inline-block;
+    color: .8rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.fields {
+    margin: 1rem;
+    position: relative; 
+    font-weight: bold; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fields__label-title, .fields__label-author { 
+    position: absolute; 
+    transition: all .2s linear; 
+    color:#489efe; 
+    font-size: 1rem;
+    margin-left: -13.8rem;
+}
+.fields__input {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 1.4rem;
+    padding: 3px 2px; 
+}
+.fields__input:invalid + .fields__label-title {
+    top: -3px; 
+    opacity: 0;
+}
+.fields__input:invalid + .fields__label-author {
+    top: 3.6rem; 
+    opacity: 0;
+}
+.fields__input + .fields__label-title {
+    top: -.4rem;
+    color: gray;
+}
+.fields__input + .fields__label-author {
+    top: 3.6rem;
+    color: gray;
+}
+.fields__input:focus + .fields__label-title {
+    opacity: 1;
+    color: #489efe;
+}
+.fields__input:focus + .fields__label-author {
+    opacity: 1; 
+    top: 3.6rem;
+    color: #489efe;
+}
+.fields__input:focus {
+    outline: none;
+}
+.fields__input:focus::placeholder {
+    color: transparent;
+}
